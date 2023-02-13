@@ -4,6 +4,9 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
+        task7();
     }
 public static void task1() {
     int age = 18;
@@ -46,13 +49,55 @@ public static void task1() {
             if (age > 18 && age <= 24) {
                 System.out.println("его место в университете.");
             }
-            if (age >= 25) {
+            else {
                 System.out.println("ему пора ходить на работу.");
             }
             }
-        else System.out.println("Ему надо сосать титю");
+      /*  else System.out.println("Ему надо сосать титю"); */
     }
 
+    public static void task5() {
+        int age = 14;
+        System.out.println("Если возраст ребенка равен " + age + " то ему ");
+        if (age < 5) {
+            System.out.println("нельзя кататься на аттракционе");
+        }
+        boolean canChildRideWithAdult = age >= 5 && age < 14;
+        if (canChildRideWithAdult) {
+            String text = "можно кататься на аттракционе в сопровождении взрослого";
+            System.out.println(text);
+        }
+        else {
+            System.out.println("можно кататься на аттракционе без сопровождения взрослого");
+        }
+    }
+    public static void task6() {
+        int totalSpace = 102;
+        int seats = 60;
+        int seatsTaken = 103; // введите сколько мест занято вообще
 
-
+        if (seatsTaken < 61) {
+        int seatsLeft = seats - seatsTaken;
+            System.out.println("В вагоне ещё есть " + seatsLeft + " сидячих и 42 стоячих мест");
+        }
+        else if (seatsTaken >= 61 && seatsTaken < 102) {
+            int standsLeft = totalSpace - seatsTaken;
+            System.out.println("В вагоне осталось " + standsLeft + " стоячих мест");
+        }
+    else System.out.println("Вагон уже полностью забит");
+    }
+    public static void task7() {
+        int one = 5;
+        int two = 4;
+        int three = 6;
+    if (three > two && three > one) {
+        System.out.println(three);
+    }
+    if (two > one && two > three) {
+        System.out.println(two);
+    }
+    if (one > two && one > three) {
+        System.out.println(one);
+    }
+    }
 }
