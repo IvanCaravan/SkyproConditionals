@@ -9,6 +9,7 @@ public class Main {
         task7();
     }
 public static void task1() {
+    System.out.println("Задача 1");
     int age = 18;
         System.out.println("Если возраст человека равен " + age + " то ");
 
@@ -20,6 +21,7 @@ public static void task1() {
     }
 }
     public static void task2() {
+        System.out.println("Задача 2");
         int temp = 4;
         if (temp < 5) {
             System.out.println("На улице холодно, нужно надеть шапку");
@@ -29,6 +31,7 @@ public static void task1() {
         }
     }
     public static void task3() {
+        System.out.println("Задача 3");
         int speed = 61;
             System.out.println("Если скорость " + speed + " то ");
         if (speed > 60) {
@@ -37,6 +40,7 @@ public static void task1() {
         else System.out.println("можно ездить спокойно.");
     }
     public static void task4() {
+        System.out.println("Задача 4");
     int age = 1;
         System.out.println("Если возраст человека равен " + age + " то ");
         if (age >= 2) {
@@ -57,6 +61,7 @@ public static void task1() {
     }
 
     public static void task5() {
+        System.out.println("Задача 5");
         int age = 14;
         System.out.println("Если возраст ребенка равен " + age + " то ему ");
         if (age < 5) {
@@ -72,32 +77,28 @@ public static void task1() {
         }
     }
     public static void task6() {
+        System.out.println("Задача 6");
         int totalSpace = 102;
         int seats = 60;
-        int seatsTaken = 103; // введите сколько мест занято вообще
+        int seatsTaken = 29; // введите сколько мест занято вообще
 
+    if (seatsTaken < 102) {
         if (seatsTaken < 61) {
         int seatsLeft = seats - seatsTaken;
             System.out.println("В вагоне ещё есть " + seatsLeft + " сидячих и 42 стоячих мест");
         }
-        else if (seatsTaken >= 61 && seatsTaken < 102) {
+        if (seatsTaken >= 61 && seatsTaken < 102) {
             int standsLeft = totalSpace - seatsTaken;
             System.out.println("В вагоне осталось " + standsLeft + " стоячих мест");
         }
+}
     else System.out.println("Вагон уже полностью забит");
     }
     public static void task7() {
-        int one = 5;
-        int two = 4;
+        System.out.println("Задача 7");
+        int one = 6;
+        int two = 6;
         int three = 6;
-    if (three > two && three > one) {
-        System.out.println(three);
-    }
-    if (two > one && two > three) {
-        System.out.println(two);
-    }
-    if (one > two && one > three) {
-        System.out.println(one);
-    }
-    }
+
+}
 }
