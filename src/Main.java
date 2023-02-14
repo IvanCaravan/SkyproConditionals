@@ -96,9 +96,30 @@ public static void task1() {
     }
     public static void task7() {
         System.out.println("Задача 7");
-        int one = 6;
-        int two = 6;
-        int three = 6;
+        int one = 8;
+        int two = 8;
+        int three = 8;
 
+        if (one != two || one != three || two != three) {
+    if (one > two && one > three) {
+        System.out.println("Макс число " + one);
+    }
+    if (two > one && two > three) {
+        System.out.println("Макс число " + two);
+    }
+    if (three > two && three > one) {
+        System.out.println("Макс число " + three);
+    }
+    if ((one == two && one > three)||(one == three && one > two)) {
+        System.out.println("Макс число " + one);
+    }
+    if ((two == one && two > three) || (two == three && two > one)) {
+        System.out.println("Макс число " + two);
+    }
+    if ((three == one && three > two) || (three == two && three > one)) {
+        System.out.println("Макс число " + three);
+    }}
+    else
+        System.out.println("ВСЕ ЧИСЛА РАВНЫ");
 }
 }
