@@ -97,7 +97,7 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         int one = 8;
-        int two = 7;
+        int two = 8;
         int three = 8;
 
         if (one != two || one != three || two != three) {
@@ -110,15 +110,14 @@ public class Main {
             if (three > two && three > one) {
                 System.out.println("Макс число " + three);
             }
-         boolean oneIsGod = (one == two && one > three) || (one == three && one > two);
-            boolean twoIsGod = (two == one && two > three) || (two == three && two > one);
-            boolean threeIsGod = (three == one && three > two) || (three == two && three > one);
+            boolean oneIsGod = (one == two && one > three) || (one == three && one > two);
+            boolean threeIsGod = (three == two && three > one);
             if (oneIsGod) {
-            System.out.println("Макс число " + one);}
-            if (twoIsGod) {
-            System.out.println("Макс число " + two);}
+            System.out.println("Макс число " + one);
+            }
             if (threeIsGod) {
-            System.out.println("Макс число " + three);}
+            System.out.println("Макс число " + three);
+            }
         } else
             System.out.println("ВСЕ ЧИСЛА РАВНЫ");
     }
